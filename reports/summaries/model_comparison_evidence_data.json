@@ -1,0 +1,1401 @@
+{
+  "accuracy_latency": [
+    {
+      "model": "fno",
+      "representative_case_end_to_end_latency_median_ms": 390.48456250000004,
+      "run_id": "airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00",
+      "seed": 17,
+      "source_key": "FNO17",
+      "test_pressure_rmse_nondimensional_macro_mean": 0.9936748866473444,
+      "test_surface_mae_nondimensional_macro_mean": 0.7981037198215396
+    },
+    {
+      "model": "fno",
+      "representative_case_end_to_end_latency_median_ms": 324.381396,
+      "run_id": "airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e",
+      "seed": 29,
+      "source_key": "FNO29",
+      "test_pressure_rmse_nondimensional_macro_mean": 0.999522463399013,
+      "test_surface_mae_nondimensional_macro_mean": 0.8002538358466362
+    },
+    {
+      "model": "fno",
+      "representative_case_end_to_end_latency_median_ms": 326.8659585,
+      "run_id": "airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9",
+      "seed": 41,
+      "source_key": "FNO41",
+      "test_pressure_rmse_nondimensional_macro_mean": 0.9967025493194122,
+      "test_surface_mae_nondimensional_macro_mean": 0.8067555219249543
+    },
+    {
+      "model": "gnn",
+      "representative_case_end_to_end_latency_median_ms": 1442.603562,
+      "run_id": "airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab",
+      "seed": 17,
+      "source_key": "GNN17",
+      "test_pressure_rmse_nondimensional_macro_mean": 0.6929318057513897,
+      "test_surface_mae_nondimensional_macro_mean": 0.5488114237981915
+    },
+    {
+      "model": "gnn",
+      "representative_case_end_to_end_latency_median_ms": 1457.157792,
+      "run_id": "airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f",
+      "seed": 29,
+      "source_key": "GNN29",
+      "test_pressure_rmse_nondimensional_macro_mean": 0.6816001672595159,
+      "test_surface_mae_nondimensional_macro_mean": 0.5582506660128874
+    },
+    {
+      "model": "gnn",
+      "representative_case_end_to_end_latency_median_ms": 1471.4463540000002,
+      "run_id": "airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89",
+      "seed": 41,
+      "source_key": "GNN41",
+      "test_pressure_rmse_nondimensional_macro_mean": 0.7257296387708378,
+      "test_surface_mae_nondimensional_macro_mean": 0.582719706863201
+    },
+    {
+      "model": "mlp",
+      "representative_case_end_to_end_latency_median_ms": 191.80627099999998,
+      "run_id": "airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c",
+      "seed": 17,
+      "source_key": "MLP17",
+      "test_pressure_rmse_nondimensional_macro_mean": 0.7248482974339159,
+      "test_surface_mae_nondimensional_macro_mean": 0.5648200433076743
+    },
+    {
+      "model": "mlp",
+      "representative_case_end_to_end_latency_median_ms": 198.76579199999998,
+      "run_id": "airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884",
+      "seed": 29,
+      "source_key": "MLP29",
+      "test_pressure_rmse_nondimensional_macro_mean": 0.6735389135673517,
+      "test_surface_mae_nondimensional_macro_mean": 0.528466031088347
+    },
+    {
+      "model": "mlp",
+      "representative_case_end_to_end_latency_median_ms": 197.14460400000002,
+      "run_id": "airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8",
+      "seed": 41,
+      "source_key": "MLP41",
+      "test_pressure_rmse_nondimensional_macro_mean": 0.696636394198904,
+      "test_surface_mae_nondimensional_macro_mean": 0.5545483500700049
+    }
+  ],
+  "aggregate_test_metrics": [
+    {
+      "count": 50,
+      "mean": 0.6985432357363817,
+      "median": 0.34017310738208795,
+      "metric": "pressure_rmse_nondimensional",
+      "model": "mlp",
+      "p90": 1.768051455750902,
+      "scope": "case_median_across_seeds",
+      "source_keys": [
+        "MLP17",
+        "MLP29",
+        "MLP41"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.7248482974339159,
+      "median": 0.3275521005088643,
+      "metric": "pressure_rmse_nondimensional",
+      "model": "mlp",
+      "p90": 1.898194529890354,
+      "scope": "seed_17",
+      "source_keys": [
+        "MLP17"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.6735389135673517,
+      "median": 0.34147924518194517,
+      "metric": "pressure_rmse_nondimensional",
+      "model": "mlp",
+      "p90": 1.7713971191369176,
+      "scope": "seed_29",
+      "source_keys": [
+        "MLP29"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.696636394198904,
+      "median": 0.29399988117337633,
+      "metric": "pressure_rmse_nondimensional",
+      "model": "mlp",
+      "p90": 1.7718764576060548,
+      "scope": "seed_41",
+      "source_keys": [
+        "MLP41"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.5517225115356313,
+      "median": 0.26746746729384097,
+      "metric": "surface_mae_nondimensional",
+      "model": "mlp",
+      "p90": 1.3995168122779889,
+      "scope": "case_median_across_seeds",
+      "source_keys": [
+        "MLP17",
+        "MLP29",
+        "MLP41"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.5648200433076744,
+      "median": 0.28917405375616545,
+      "metric": "surface_mae_nondimensional",
+      "model": "mlp",
+      "p90": 1.4939358614691463,
+      "scope": "seed_17",
+      "source_keys": [
+        "MLP17"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.5284660310883469,
+      "median": 0.25256985059794845,
+      "metric": "surface_mae_nondimensional",
+      "model": "mlp",
+      "p90": 1.3841903454750364,
+      "scope": "seed_29",
+      "source_keys": [
+        "MLP29"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.554548350070005,
+      "median": 0.223402742997185,
+      "metric": "surface_mae_nondimensional",
+      "model": "mlp",
+      "p90": 1.4082204313473867,
+      "scope": "seed_41",
+      "source_keys": [
+        "MLP41"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.6912799097899835,
+      "median": 0.341875221071973,
+      "metric": "pressure_rmse_nondimensional",
+      "model": "gnn",
+      "p90": 1.754025969247199,
+      "scope": "case_median_across_seeds",
+      "source_keys": [
+        "GNN17",
+        "GNN29",
+        "GNN41"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.6929318057513898,
+      "median": 0.3141011689082356,
+      "metric": "pressure_rmse_nondimensional",
+      "model": "gnn",
+      "p90": 1.816384596359374,
+      "scope": "seed_17",
+      "source_keys": [
+        "GNN17"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.6816001672595159,
+      "median": 0.35785168859320016,
+      "metric": "pressure_rmse_nondimensional",
+      "model": "gnn",
+      "p90": 1.7602808304054982,
+      "scope": "seed_29",
+      "source_keys": [
+        "GNN29"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.725729638770838,
+      "median": 0.3749461035409742,
+      "metric": "pressure_rmse_nondimensional",
+      "model": "gnn",
+      "p90": 1.844532503505127,
+      "scope": "seed_41",
+      "source_keys": [
+        "GNN41"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.5530710688024133,
+      "median": 0.2930039447272622,
+      "metric": "surface_mae_nondimensional",
+      "model": "gnn",
+      "p90": 1.3202411936311094,
+      "scope": "case_median_across_seeds",
+      "source_keys": [
+        "GNN17",
+        "GNN29",
+        "GNN41"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.5488114237981915,
+      "median": 0.26059129837325756,
+      "metric": "surface_mae_nondimensional",
+      "model": "gnn",
+      "p90": 1.4055124790737397,
+      "scope": "seed_17",
+      "source_keys": [
+        "GNN17"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.5582506660128874,
+      "median": 0.3155939202610889,
+      "metric": "surface_mae_nondimensional",
+      "model": "gnn",
+      "p90": 1.302826391270354,
+      "scope": "seed_29",
+      "source_keys": [
+        "GNN29"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.582719706863201,
+      "median": 0.32380949043064655,
+      "metric": "surface_mae_nondimensional",
+      "model": "gnn",
+      "p90": 1.48883471086584,
+      "scope": "seed_41",
+      "source_keys": [
+        "GNN41"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.9961475753961102,
+      "median": 0.3846977490804354,
+      "metric": "pressure_rmse_nondimensional",
+      "model": "fno",
+      "p90": 2.4651087433514864,
+      "scope": "case_median_across_seeds",
+      "source_keys": [
+        "FNO17",
+        "FNO29",
+        "FNO41"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.9936748866473443,
+      "median": 0.35893369903613254,
+      "metric": "pressure_rmse_nondimensional",
+      "model": "fno",
+      "p90": 2.4651087433514864,
+      "scope": "seed_17",
+      "source_keys": [
+        "FNO17"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.9995224633990131,
+      "median": 0.3915000400399021,
+      "metric": "pressure_rmse_nondimensional",
+      "model": "fno",
+      "p90": 2.4962051826860194,
+      "scope": "seed_29",
+      "source_keys": [
+        "FNO29"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.996702549319412,
+      "median": 0.3846977490804354,
+      "metric": "pressure_rmse_nondimensional",
+      "model": "fno",
+      "p90": 2.451899744645031,
+      "scope": "seed_41",
+      "source_keys": [
+        "FNO41"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.8002708084645843,
+      "median": 0.33694701285583756,
+      "metric": "surface_mae_nondimensional",
+      "model": "fno",
+      "p90": 1.972393117522356,
+      "scope": "case_median_across_seeds",
+      "source_keys": [
+        "FNO17",
+        "FNO29",
+        "FNO41"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.7981037198215395,
+      "median": 0.324377786717445,
+      "metric": "surface_mae_nondimensional",
+      "model": "fno",
+      "p90": 1.9672889288462712,
+      "scope": "seed_17",
+      "source_keys": [
+        "FNO17"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.8002538358466361,
+      "median": 0.33694701285583756,
+      "metric": "surface_mae_nondimensional",
+      "model": "fno",
+      "p90": 1.988290800773936,
+      "scope": "seed_29",
+      "source_keys": [
+        "FNO29"
+      ]
+    },
+    {
+      "count": 50,
+      "mean": 0.8067555219249543,
+      "median": 0.3382476231633339,
+      "metric": "surface_mae_nondimensional",
+      "model": "fno",
+      "p90": 1.972393117522356,
+      "scope": "seed_41",
+      "source_keys": [
+        "FNO41"
+      ]
+    }
+  ],
+  "article_drafting_started": false,
+  "created_at_utc": "2026-09-14T18:50:08.650281+00:00",
+  "figures": {
+    "accuracy_latency": "reports/figures/model_comparison/accuracy_vs_latency.png",
+    "cases": {
+      "high_error": {
+        "17": "reports/figures/model_comparison/high_error_seed_17.png",
+        "29": "reports/figures/model_comparison/high_error_seed_29.png",
+        "41": "reports/figures/model_comparison/high_error_seed_41.png"
+      },
+      "median_difficulty": {
+        "17": "reports/figures/model_comparison/median_difficulty_seed_17.png",
+        "29": "reports/figures/model_comparison/median_difficulty_seed_29.png",
+        "41": "reports/figures/model_comparison/median_difficulty_seed_41.png"
+      }
+    },
+    "error_distributions": "reports/figures/model_comparison/per_case_error_distributions.png"
+  },
+  "lock_path": "reports/summaries/model_comparison_checkpoint_lock.json",
+  "lock_sha256": "2b2583784634622ac0c850f3def757520b34d61be5a0820dacbf40afc436b8e8",
+  "paired_test_case_comparisons": [
+    {
+      "count": 50,
+      "first_lower": 26,
+      "first_model": "mlp",
+      "mean": 0.03191649168252611,
+      "median": -0.0065965314871081066,
+      "metric": "pressure_rmse_nondimensional",
+      "p90": 0.12958298350392086,
+      "scope": "seed_17",
+      "second_lower": 24,
+      "second_model": "gnn",
+      "source_keys": [
+        "MLP17",
+        "GNN17"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 23,
+      "first_model": "mlp",
+      "mean": -0.008061253692164184,
+      "median": 0.009127078269214009,
+      "metric": "pressure_rmse_nondimensional",
+      "p90": 0.14806392158112658,
+      "scope": "seed_29",
+      "second_lower": 27,
+      "second_model": "gnn",
+      "source_keys": [
+        "MLP29",
+        "GNN29"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 29,
+      "first_model": "mlp",
+      "mean": -0.029093244571933904,
+      "median": -0.024684090023159355,
+      "metric": "pressure_rmse_nondimensional",
+      "p90": 0.07591418462223613,
+      "scope": "seed_41",
+      "second_lower": 21,
+      "second_model": "gnn",
+      "source_keys": [
+        "MLP41",
+        "GNN41"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 23,
+      "first_model": "mlp",
+      "mean": 0.007263325946398089,
+      "median": 0.005428875492307056,
+      "metric": "pressure_rmse_nondimensional",
+      "p90": 0.06317942051833676,
+      "scope": "case_median_across_seeds",
+      "second_lower": 27,
+      "second_model": "gnn",
+      "source_keys": [
+        "MLP17",
+        "MLP29",
+        "MLP41",
+        "GNN17",
+        "GNN29",
+        "GNN41"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 26,
+      "first_model": "mlp",
+      "mean": 0.016008619509482874,
+      "median": -0.0020651875166158296,
+      "metric": "surface_mae_nondimensional",
+      "p90": 0.11865901477670387,
+      "scope": "seed_17",
+      "second_lower": 24,
+      "second_model": "gnn",
+      "source_keys": [
+        "MLP17",
+        "GNN17"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 29,
+      "first_model": "mlp",
+      "mean": -0.029784634924540455,
+      "median": -0.01160891128280421,
+      "metric": "surface_mae_nondimensional",
+      "p90": 0.1743021039657458,
+      "scope": "seed_29",
+      "second_lower": 21,
+      "second_model": "gnn",
+      "source_keys": [
+        "MLP29",
+        "GNN29"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 29,
+      "first_model": "mlp",
+      "mean": -0.028171356793196062,
+      "median": -0.022603408727681337,
+      "metric": "surface_mae_nondimensional",
+      "p90": 0.06404722125142852,
+      "scope": "seed_41",
+      "second_lower": 21,
+      "second_model": "gnn",
+      "source_keys": [
+        "MLP41",
+        "GNN41"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 28,
+      "first_model": "mlp",
+      "mean": -0.0013485572667818052,
+      "median": -0.012391179817882389,
+      "metric": "surface_mae_nondimensional",
+      "p90": 0.08704009985194743,
+      "scope": "case_median_across_seeds",
+      "second_lower": 22,
+      "second_model": "gnn",
+      "source_keys": [
+        "MLP17",
+        "MLP29",
+        "MLP41",
+        "GNN17",
+        "GNN29",
+        "GNN41"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 43,
+      "first_model": "mlp",
+      "mean": -0.2688265892134285,
+      "median": -0.10940833852175794,
+      "metric": "pressure_rmse_nondimensional",
+      "p90": 0.06380107715554101,
+      "scope": "seed_17",
+      "second_lower": 7,
+      "second_model": "fno",
+      "source_keys": [
+        "MLP17",
+        "FNO17"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 43,
+      "first_model": "mlp",
+      "mean": -0.3259835498316612,
+      "median": -0.09714863745911888,
+      "metric": "pressure_rmse_nondimensional",
+      "p90": 0.056612451180382835,
+      "scope": "seed_29",
+      "second_lower": 7,
+      "second_model": "fno",
+      "source_keys": [
+        "MLP29",
+        "FNO29"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 43,
+      "first_model": "mlp",
+      "mean": -0.3000661551205081,
+      "median": -0.09760264508435965,
+      "metric": "pressure_rmse_nondimensional",
+      "p90": 0.032175047859091165,
+      "scope": "seed_41",
+      "second_lower": 7,
+      "second_model": "fno",
+      "source_keys": [
+        "MLP41",
+        "FNO41"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 43,
+      "first_model": "mlp",
+      "mean": -0.29760433965972866,
+      "median": -0.08699587295766895,
+      "metric": "pressure_rmse_nondimensional",
+      "p90": 0.03030862975571241,
+      "scope": "case_median_across_seeds",
+      "second_lower": 7,
+      "second_model": "fno",
+      "source_keys": [
+        "MLP17",
+        "MLP29",
+        "MLP41",
+        "FNO17",
+        "FNO29",
+        "FNO41"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 40,
+      "first_model": "mlp",
+      "mean": -0.23328367651386528,
+      "median": -0.09848308542403399,
+      "metric": "surface_mae_nondimensional",
+      "p90": 0.06785795091728124,
+      "scope": "seed_17",
+      "second_lower": 10,
+      "second_model": "fno",
+      "source_keys": [
+        "MLP17",
+        "FNO17"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 42,
+      "first_model": "mlp",
+      "mean": -0.2717878047582893,
+      "median": -0.10200373744331523,
+      "metric": "surface_mae_nondimensional",
+      "p90": 0.061542730099266876,
+      "scope": "seed_29",
+      "second_lower": 8,
+      "second_model": "fno",
+      "source_keys": [
+        "MLP29",
+        "FNO29"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 42,
+      "first_model": "mlp",
+      "mean": -0.2522071718549494,
+      "median": -0.11299786724023075,
+      "metric": "surface_mae_nondimensional",
+      "p90": 0.03864204046230897,
+      "scope": "seed_41",
+      "second_lower": 8,
+      "second_model": "fno",
+      "source_keys": [
+        "MLP41",
+        "FNO41"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 44,
+      "first_model": "mlp",
+      "mean": -0.24854829692895272,
+      "median": -0.0982928054705155,
+      "metric": "surface_mae_nondimensional",
+      "p90": 0.03144399203712056,
+      "scope": "case_median_across_seeds",
+      "second_lower": 6,
+      "second_model": "fno",
+      "source_keys": [
+        "MLP17",
+        "MLP29",
+        "MLP41",
+        "FNO17",
+        "FNO29",
+        "FNO41"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 46,
+      "first_model": "gnn",
+      "mean": -0.30074308089595464,
+      "median": -0.09083904006805713,
+      "metric": "pressure_rmse_nondimensional",
+      "p90": -0.02342183631800987,
+      "scope": "seed_17",
+      "second_lower": 4,
+      "second_model": "fno",
+      "source_keys": [
+        "GNN17",
+        "FNO17"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 39,
+      "first_model": "gnn",
+      "mean": -0.317922296139497,
+      "median": -0.08952005847676311,
+      "metric": "pressure_rmse_nondimensional",
+      "p90": 0.14675365379335084,
+      "scope": "seed_29",
+      "second_lower": 11,
+      "second_model": "fno",
+      "source_keys": [
+        "GNN29",
+        "FNO29"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 39,
+      "first_model": "gnn",
+      "mean": -0.2709729105485742,
+      "median": -0.08812107183641378,
+      "metric": "pressure_rmse_nondimensional",
+      "p90": 0.03055353374313225,
+      "scope": "seed_41",
+      "second_lower": 11,
+      "second_model": "fno",
+      "source_keys": [
+        "GNN41",
+        "FNO41"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 42,
+      "first_model": "gnn",
+      "mean": -0.30486766560612677,
+      "median": -0.08998440797997871,
+      "metric": "pressure_rmse_nondimensional",
+      "p90": 0.029480546854468877,
+      "scope": "case_median_across_seeds",
+      "second_lower": 8,
+      "second_model": "fno",
+      "source_keys": [
+        "GNN17",
+        "GNN29",
+        "GNN41",
+        "FNO17",
+        "FNO29",
+        "FNO41"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 45,
+      "first_model": "gnn",
+      "mean": -0.24929229602334815,
+      "median": -0.09703896798878292,
+      "metric": "surface_mae_nondimensional",
+      "p90": -0.009640456944543307,
+      "scope": "seed_17",
+      "second_lower": 5,
+      "second_model": "fno",
+      "source_keys": [
+        "GNN17",
+        "FNO17"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 39,
+      "first_model": "gnn",
+      "mean": -0.24200316983374884,
+      "median": -0.08506633474471181,
+      "metric": "surface_mae_nondimensional",
+      "p90": 0.15154388722429887,
+      "scope": "seed_29",
+      "second_lower": 11,
+      "second_model": "fno",
+      "source_keys": [
+        "GNN29",
+        "FNO29"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 37,
+      "first_model": "gnn",
+      "mean": -0.22403581506175335,
+      "median": -0.08548618096861813,
+      "metric": "surface_mae_nondimensional",
+      "p90": 0.10250651146837249,
+      "scope": "seed_41",
+      "second_lower": 13,
+      "second_model": "fno",
+      "source_keys": [
+        "GNN41",
+        "FNO41"
+      ],
+      "ties": 0
+    },
+    {
+      "count": 50,
+      "first_lower": 41,
+      "first_model": "gnn",
+      "mean": -0.24719973966217096,
+      "median": -0.08534667636562804,
+      "metric": "surface_mae_nondimensional",
+      "p90": 0.04490685267715241,
+      "scope": "case_median_across_seeds",
+      "second_lower": 9,
+      "second_model": "fno",
+      "source_keys": [
+        "GNN17",
+        "GNN29",
+        "GNN41",
+        "FNO17",
+        "FNO29",
+        "FNO41"
+      ],
+      "ties": 0
+    }
+  ],
+  "prediction_artifact": "reports/summaries/model_comparison_representative_predictions.npz",
+  "profile_artifact": "reports/summaries/model_comparison_profile.json",
+  "profile_run_summaries": [
+    {
+      "component": "preprocessing",
+      "count": 6,
+      "mean": 390.38538900000003,
+      "median": 371.505396,
+      "model": "fno",
+      "p90": 465.8200625,
+      "run_id": "airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00",
+      "seed": 17,
+      "source_key": "FNO17"
+    },
+    {
+      "component": "model_forward",
+      "count": 60,
+      "mean": 8.429380516666667,
+      "median": 8.372229,
+      "model": "fno",
+      "p90": 10.3946291,
+      "run_id": "airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00",
+      "seed": 17,
+      "source_key": "FNO17"
+    },
+    {
+      "component": "postprocessing_query",
+      "count": 60,
+      "mean": 0.2757681833333333,
+      "median": 0.2292085,
+      "model": "fno",
+      "p90": 0.3439497,
+      "run_id": "airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00",
+      "seed": 17,
+      "source_key": "FNO17"
+    },
+    {
+      "component": "end_to_end",
+      "count": 6,
+      "mean": 400.8507571666667,
+      "median": 367.32741699999997,
+      "model": "fno",
+      "p90": 511.641396,
+      "run_id": "airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00",
+      "seed": 17,
+      "source_key": "FNO17"
+    },
+    {
+      "component": "preprocessing",
+      "count": 6,
+      "mean": 329.6569725,
+      "median": 320.55070850000004,
+      "model": "fno",
+      "p90": 358.1565005,
+      "run_id": "airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e",
+      "seed": 29,
+      "source_key": "FNO29"
+    },
+    {
+      "component": "model_forward",
+      "count": 60,
+      "mean": 8.994029266666667,
+      "median": 8.590603999999999,
+      "model": "fno",
+      "p90": 11.431754200000002,
+      "run_id": "airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e",
+      "seed": 29,
+      "source_key": "FNO29"
+    },
+    {
+      "component": "postprocessing_query",
+      "count": 60,
+      "mean": 0.28876246666666666,
+      "median": 0.3095,
+      "model": "fno",
+      "p90": 0.5272714000000001,
+      "run_id": "airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e",
+      "seed": 29,
+      "source_key": "FNO29"
+    },
+    {
+      "component": "end_to_end",
+      "count": 6,
+      "mean": 340.3279375,
+      "median": 328.69,
+      "model": "fno",
+      "p90": 381.2506665,
+      "run_id": "airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e",
+      "seed": 29,
+      "source_key": "FNO29"
+    },
+    {
+      "component": "preprocessing",
+      "count": 6,
+      "mean": 318.1457295,
+      "median": 318.2925835,
+      "model": "fno",
+      "p90": 334.63343799999996,
+      "run_id": "airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9",
+      "seed": 41,
+      "source_key": "FNO41"
+    },
+    {
+      "component": "model_forward",
+      "count": 60,
+      "mean": 8.165966716666668,
+      "median": 7.952063,
+      "model": "fno",
+      "p90": 10.018938100000002,
+      "run_id": "airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9",
+      "seed": 41,
+      "source_key": "FNO41"
+    },
+    {
+      "component": "postprocessing_query",
+      "count": 60,
+      "mean": 0.2555917833333334,
+      "median": 0.30281250000000004,
+      "model": "fno",
+      "p90": 0.3563628,
+      "run_id": "airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9",
+      "seed": 41,
+      "source_key": "FNO41"
+    },
+    {
+      "component": "end_to_end",
+      "count": 6,
+      "mean": 325.7689306666667,
+      "median": 324.8990005,
+      "model": "fno",
+      "p90": 341.11279149999996,
+      "run_id": "airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9",
+      "seed": 41,
+      "source_key": "FNO41"
+    },
+    {
+      "component": "preprocessing",
+      "count": 6,
+      "mean": 1516.2420208333333,
+      "median": 1472.56075,
+      "model": "gnn",
+      "p90": 1696.8726040000001,
+      "run_id": "airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab",
+      "seed": 17,
+      "source_key": "GNN17"
+    },
+    {
+      "component": "model_forward",
+      "count": 60,
+      "mean": 20.45232225,
+      "median": 17.8666665,
+      "model": "gnn",
+      "p90": 27.806083100000002,
+      "run_id": "airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab",
+      "seed": 17,
+      "source_key": "GNN17"
+    },
+    {
+      "component": "postprocessing_query",
+      "count": 60,
+      "mean": 0.07238966666666663,
+      "median": 0.048792,
+      "model": "gnn",
+      "p90": 0.1093956,
+      "run_id": "airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab",
+      "seed": 17,
+      "source_key": "GNN17"
+    },
+    {
+      "component": "end_to_end",
+      "count": 6,
+      "mean": 1504.2698678333334,
+      "median": 1436.311437,
+      "model": "gnn",
+      "p90": 1751.7037915,
+      "run_id": "airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab",
+      "seed": 17,
+      "source_key": "GNN17"
+    },
+    {
+      "component": "preprocessing",
+      "count": 6,
+      "mean": 1481.015145833333,
+      "median": 1485.6086664999998,
+      "model": "gnn",
+      "p90": 1529.0833539999999,
+      "run_id": "airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f",
+      "seed": 29,
+      "source_key": "GNN29"
+    },
+    {
+      "component": "model_forward",
+      "count": 60,
+      "mean": 18.24320898333333,
+      "median": 16.996312500000002,
+      "model": "gnn",
+      "p90": 20.7746497,
+      "run_id": "airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f",
+      "seed": 29,
+      "source_key": "GNN29"
+    },
+    {
+      "component": "postprocessing_query",
+      "count": 60,
+      "mean": 0.045243733333333334,
+      "median": 0.046354,
+      "model": "gnn",
+      "p90": 0.047471400000000004,
+      "run_id": "airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f",
+      "seed": 29,
+      "source_key": "GNN29"
+    },
+    {
+      "component": "end_to_end",
+      "count": 6,
+      "mean": 1483.0378334999998,
+      "median": 1488.2434170000001,
+      "model": "gnn",
+      "p90": 1566.2738960000001,
+      "run_id": "airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f",
+      "seed": 29,
+      "source_key": "GNN29"
+    },
+    {
+      "component": "preprocessing",
+      "count": 6,
+      "mean": 1499.5758266666664,
+      "median": 1498.4913545,
+      "model": "gnn",
+      "p90": 1559.117042,
+      "run_id": "airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89",
+      "seed": 41,
+      "source_key": "GNN41"
+    },
+    {
+      "component": "model_forward",
+      "count": 60,
+      "mean": 19.459110416666668,
+      "median": 17.658,
+      "model": "gnn",
+      "p90": 25.4328958,
+      "run_id": "airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89",
+      "seed": 41,
+      "source_key": "GNN41"
+    },
+    {
+      "component": "postprocessing_query",
+      "count": 60,
+      "mean": 0.05779866666666667,
+      "median": 0.0489375,
+      "model": "gnn",
+      "p90": 0.0705256,
+      "run_id": "airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89",
+      "seed": 41,
+      "source_key": "GNN41"
+    },
+    {
+      "component": "end_to_end",
+      "count": 6,
+      "mean": 1483.4430691666666,
+      "median": 1494.5170205,
+      "model": "gnn",
+      "p90": 1539.8660415,
+      "run_id": "airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89",
+      "seed": 41,
+      "source_key": "GNN41"
+    },
+    {
+      "component": "preprocessing",
+      "count": 6,
+      "mean": 194.48196516666664,
+      "median": 192.8236875,
+      "model": "mlp",
+      "p90": 203.15775000000002,
+      "run_id": "airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c",
+      "seed": 17,
+      "source_key": "MLP17"
+    },
+    {
+      "component": "model_forward",
+      "count": 60,
+      "mean": 0.2886194,
+      "median": 0.2831455,
+      "model": "mlp",
+      "p90": 0.3377631,
+      "run_id": "airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c",
+      "seed": 17,
+      "source_key": "MLP17"
+    },
+    {
+      "component": "postprocessing_query",
+      "count": 60,
+      "mean": 0.0435987,
+      "median": 0.0431045,
+      "model": "mlp",
+      "p90": 0.0452131,
+      "run_id": "airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c",
+      "seed": 17,
+      "source_key": "MLP17"
+    },
+    {
+      "component": "end_to_end",
+      "count": 6,
+      "mean": 192.0876598333333,
+      "median": 192.8193335,
+      "model": "mlp",
+      "p90": 197.8158125,
+      "run_id": "airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c",
+      "seed": 17,
+      "source_key": "MLP17"
+    },
+    {
+      "component": "preprocessing",
+      "count": 6,
+      "mean": 200.5403335,
+      "median": 198.34135450000002,
+      "model": "mlp",
+      "p90": 213.6413335,
+      "run_id": "airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884",
+      "seed": 29,
+      "source_key": "MLP29"
+    },
+    {
+      "component": "model_forward",
+      "count": 60,
+      "mean": 0.2703846333333333,
+      "median": 0.245,
+      "model": "mlp",
+      "p90": 0.3370089,
+      "run_id": "airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884",
+      "seed": 29,
+      "source_key": "MLP29"
+    },
+    {
+      "component": "postprocessing_query",
+      "count": 60,
+      "mean": 0.0438431,
+      "median": 0.0428125,
+      "model": "mlp",
+      "p90": 0.0451836,
+      "run_id": "airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884",
+      "seed": 29,
+      "source_key": "MLP29"
+    },
+    {
+      "component": "end_to_end",
+      "count": 6,
+      "mean": 203.44521550000002,
+      "median": 203.330042,
+      "model": "mlp",
+      "p90": 216.69268799999998,
+      "run_id": "airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884",
+      "seed": 29,
+      "source_key": "MLP29"
+    },
+    {
+      "component": "preprocessing",
+      "count": 6,
+      "mean": 197.45978483333332,
+      "median": 198.20937500000002,
+      "model": "mlp",
+      "p90": 207.947875,
+      "run_id": "airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8",
+      "seed": 41,
+      "source_key": "MLP41"
+    },
+    {
+      "component": "model_forward",
+      "count": 60,
+      "mean": 0.33403681666666674,
+      "median": 0.286667,
+      "model": "mlp",
+      "p90": 0.4863794,
+      "run_id": "airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8",
+      "seed": 41,
+      "source_key": "MLP41"
+    },
+    {
+      "component": "postprocessing_query",
+      "count": 60,
+      "mean": 0.04494786666666666,
+      "median": 0.0454585,
+      "model": "mlp",
+      "p90": 0.0469664,
+      "run_id": "airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8",
+      "seed": 41,
+      "source_key": "MLP41"
+    },
+    {
+      "component": "end_to_end",
+      "count": 6,
+      "mean": 201.32145850000003,
+      "median": 199.2947295,
+      "model": "mlp",
+      "p90": 218.11087500000002,
+      "run_id": "airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8",
+      "seed": 41,
+      "source_key": "MLP41"
+    }
+  ],
+  "raw_test_cases_reopened": false,
+  "representative_validation_cases": {
+    "high_error": {
+      "case_id": "airFoil2D_SST_84.367_14.837_0.843_4.812_12.138",
+      "difficulty_score": 2.4082602786919707,
+      "population_median": 0.26280307001429415,
+      "source_keys": [
+        "FNO17",
+        "FNO29",
+        "FNO41",
+        "GNN17",
+        "GNN29",
+        "GNN41",
+        "MLP17",
+        "MLP29",
+        "MLP41"
+      ],
+      "split": "validation"
+    },
+    "median_difficulty": {
+      "case_id": "airFoil2D_SST_65.162_-0.97_2.814_4.126_1.0_10.627",
+      "difficulty_score": 0.2610684782133573,
+      "population_median": 0.26280307001429415,
+      "source_keys": [
+        "FNO17",
+        "FNO29",
+        "FNO41",
+        "GNN17",
+        "GNN29",
+        "GNN41",
+        "MLP17",
+        "MLP29",
+        "MLP41"
+      ],
+      "split": "validation"
+    }
+  },
+  "retrained_or_tuned": false,
+  "schema_version": 1,
+  "source_registry": {
+    "FNO17": {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00/checkpoints/selected.pt",
+      "checkpoint_sha256": "0289ff6f90c62feee27e2c7d57781b5ed8f3b8dc88202556f0e628dc79fc5c53",
+      "manifest_path": "reports/runs/airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00/manifest.json",
+      "metrics_path": "reports/runs/airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00/metrics.json",
+      "model": "fno",
+      "per_case_metrics_path": "reports/runs/airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00/per_case_metrics.json",
+      "resolved_config_path": "reports/runs/airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00/resolved_config.json",
+      "run_directory": "reports/runs/airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00",
+      "run_id": "airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00",
+      "seed": 17,
+      "timing_path": "reports/runs/airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00/timing.json"
+    },
+    "FNO29": {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e/checkpoints/selected.pt",
+      "checkpoint_sha256": "96d73c52a562cbbd8ff7e7639cfe14e05e1e1c3ee41cdd64cea7fc14d8826ae5",
+      "manifest_path": "reports/runs/airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e/manifest.json",
+      "metrics_path": "reports/runs/airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e/metrics.json",
+      "model": "fno",
+      "per_case_metrics_path": "reports/runs/airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e/per_case_metrics.json",
+      "resolved_config_path": "reports/runs/airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e/resolved_config.json",
+      "run_directory": "reports/runs/airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e",
+      "run_id": "airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e",
+      "seed": 29,
+      "timing_path": "reports/runs/airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e/timing.json"
+    },
+    "FNO41": {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9/checkpoints/selected.pt",
+      "checkpoint_sha256": "5964a45dfac4165b3784b9e468c280f3be4184c4ad2c00ff56904762fabe5a4c",
+      "manifest_path": "reports/runs/airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9/manifest.json",
+      "metrics_path": "reports/runs/airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9/metrics.json",
+      "model": "fno",
+      "per_case_metrics_path": "reports/runs/airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9/per_case_metrics.json",
+      "resolved_config_path": "reports/runs/airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9/resolved_config.json",
+      "run_directory": "reports/runs/airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9",
+      "run_id": "airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9",
+      "seed": 41,
+      "timing_path": "reports/runs/airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9/timing.json"
+    },
+    "GNN17": {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab/checkpoints/selected.pt",
+      "checkpoint_sha256": "ed21ea6db38c453f1c62467145d3685652770ad6491ca63b88f25781f4889c54",
+      "manifest_path": "reports/runs/airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab/manifest.json",
+      "metrics_path": "reports/runs/airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab/metrics.json",
+      "model": "gnn",
+      "per_case_metrics_path": "reports/runs/airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab/per_case_metrics.json",
+      "resolved_config_path": "reports/runs/airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab/resolved_config.json",
+      "run_directory": "reports/runs/airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab",
+      "run_id": "airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab",
+      "seed": 17,
+      "timing_path": "reports/runs/airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab/timing.json"
+    },
+    "GNN29": {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f/checkpoints/selected.pt",
+      "checkpoint_sha256": "80f8e470eed31bf034ca655dc257a6e7b94be2407722a9bf83708b54b56b6f17",
+      "manifest_path": "reports/runs/airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f/manifest.json",
+      "metrics_path": "reports/runs/airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f/metrics.json",
+      "model": "gnn",
+      "per_case_metrics_path": "reports/runs/airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f/per_case_metrics.json",
+      "resolved_config_path": "reports/runs/airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f/resolved_config.json",
+      "run_directory": "reports/runs/airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f",
+      "run_id": "airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f",
+      "seed": 29,
+      "timing_path": "reports/runs/airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f/timing.json"
+    },
+    "GNN41": {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89/checkpoints/selected.pt",
+      "checkpoint_sha256": "4592dc107d59a20cda99e42a41a80719e9030545c6ba3c5541305d86ee026b1c",
+      "manifest_path": "reports/runs/airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89/manifest.json",
+      "metrics_path": "reports/runs/airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89/metrics.json",
+      "model": "gnn",
+      "per_case_metrics_path": "reports/runs/airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89/per_case_metrics.json",
+      "resolved_config_path": "reports/runs/airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89/resolved_config.json",
+      "run_directory": "reports/runs/airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89",
+      "run_id": "airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89",
+      "seed": 41,
+      "timing_path": "reports/runs/airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89/timing.json"
+    },
+    "MLP17": {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c/checkpoints/selected.pt",
+      "checkpoint_sha256": "8c8ac8c7b7629ef311d6943af4e3bf81eef14ab6dde6bf076900e29c3f9548e7",
+      "manifest_path": "reports/runs/airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c/manifest.json",
+      "metrics_path": "reports/runs/airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c/metrics.json",
+      "model": "mlp",
+      "per_case_metrics_path": "reports/runs/airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c/per_case_metrics.json",
+      "resolved_config_path": "reports/runs/airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c/resolved_config.json",
+      "run_directory": "reports/runs/airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c",
+      "run_id": "airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c",
+      "seed": 17,
+      "timing_path": "reports/runs/airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c/timing.json"
+    },
+    "MLP29": {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884/checkpoints/selected.pt",
+      "checkpoint_sha256": "96c0ae42bccbc08b0db7c4d82c663517466e19df0876ced5a17c4ab114203202",
+      "manifest_path": "reports/runs/airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884/manifest.json",
+      "metrics_path": "reports/runs/airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884/metrics.json",
+      "model": "mlp",
+      "per_case_metrics_path": "reports/runs/airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884/per_case_metrics.json",
+      "resolved_config_path": "reports/runs/airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884/resolved_config.json",
+      "run_directory": "reports/runs/airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884",
+      "run_id": "airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884",
+      "seed": 29,
+      "timing_path": "reports/runs/airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884/timing.json"
+    },
+    "MLP41": {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8/checkpoints/selected.pt",
+      "checkpoint_sha256": "e077dbd32bd51a7f7f2c30af0b236e9357b5f22909c25b80f76cfda114aad872",
+      "manifest_path": "reports/runs/airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8/manifest.json",
+      "metrics_path": "reports/runs/airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8/metrics.json",
+      "model": "mlp",
+      "per_case_metrics_path": "reports/runs/airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8/per_case_metrics.json",
+      "resolved_config_path": "reports/runs/airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8/resolved_config.json",
+      "run_directory": "reports/runs/airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8",
+      "run_id": "airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8",
+      "seed": 41,
+      "timing_path": "reports/runs/airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8/timing.json"
+    }
+  },
+  "status": "COMPLETED_MODEL_COMPARISON_ANALYSIS",
+  "edge_feature_ablation_started": false
+}

@@ -1,0 +1,44 @@
+# This prevents accidental Git inclusion, not Copilot/cloud access.
+.venv/
+__pycache__/
+*.pyc
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+.history/
+build/
+dist/
+*.egg-info/
+.env
+.env.*
+
+# Raw/derived scientific data. Keep data/manifests/ trackable.
+data/raw/
+data/processed/
+data/airfrans_hf/
+
+# Model and run artifacts. Keep small reports/ trackable.
+artifacts/checkpoints/
+artifacts/predictions/
+checkpoints/
+predictions/
+/runs/
+/reports/runs/*
+!/reports/runs/README.md
+*.ckpt
+*.h5
+*.hdf5
+*.npy
+*.npz
+!reports/summaries/model_comparison_representative_predictions.npz
+*.parquet
+*.pt
+*.pth
+*.vtu
+*.vtp
+*.log
+.DS_Store

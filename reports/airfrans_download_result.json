@@ -1,0 +1,12 @@
+{
+  "completed_at_utc": "2026-09-14T13:15:39.597130+00:00",
+  "destination": "data/raw/airfrans_hf_selected",
+  "frozen_selection_sha256": "8c532a15c2af6538177ae9885de8978553b162c4eb788d33a2998c9edc447014",
+  "plan_path": "data/manifests/airfrans_hf_download_plan.json",
+  "plan_sha256": "3b10ef376da0f735b8bab43ad433939ce205849a52d1cd44316c50299a0bf7f8",
+  "repo_id": "OneScience-Group/airfrans",
+  "revision": "f99b37789d0c76e02b923b14b23dcd6389f0d895",
+  "status": "DOWNLOADED_AND_VERIFIED",
+  "verified_bytes": 3745583013,
+  "verified_file_count": 751
+}

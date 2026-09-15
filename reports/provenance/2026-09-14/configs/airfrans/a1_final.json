@@ -1,0 +1,56 @@
+{
+  "device": "cpu",
+  "evaluation": {
+    "checkpoint_metric": "macro_mean_validation_pressure_rmse_nondimensional",
+    "dimensionless_pressure_scale": "0.5 * (inlet_velocity_x^2 + inlet_velocity_y^2)",
+    "point_seed_namespace": "airfrans-a1-common-evaluation-v1",
+    "surface_metric": "mean absolute dimensionless pressure error on sampled geometry-surface points",
+    "tie_break": "earliest_epoch"
+  },
+  "models": {
+    "fno": {
+      "blocks": 4,
+      "grid_height": 64,
+      "grid_width": 64,
+      "modes": 12,
+      "width": 32
+    },
+    "gnn": {
+      "blocks": 4,
+      "hidden_width": 64,
+      "neighbors": 12,
+      "wing_crossing_edges": "excluded_using_ordered_aerofoil_polygon"
+    },
+    "mlp": {
+      "hidden_layers": 2,
+      "hidden_width": 64
+    }
+  },
+  "purpose": "FINAL_A1_MLP_GNN_FNO_COMPARISON",
+  "sampling": {
+    "points_per_case": 2048,
+    "surface_samples": 512,
+    "training_point_seed_namespace": "airfrans-a1-training-points-v1",
+    "volume_samples": 1536
+  },
+  "schema_version": 1,
+  "seeds": [
+    17,
+    29,
+    41
+  ],
+  "split": {
+    "selection_file_sha256": "8c532a15c2af6538177ae9885de8978553b162c4eb788d33a2998c9edc447014",
+    "test_cases": 50,
+    "train_cases": 160,
+    "validation_cases": 40
+  },
+  "training": {
+    "epochs": 100,
+    "learning_rate": 0.001,
+    "max_wall_seconds_per_run": 9072,
+    "optimizer": "Adam",
+    "torch_threads": 8,
+    "validation_interval_epochs": 10
+  }
+}

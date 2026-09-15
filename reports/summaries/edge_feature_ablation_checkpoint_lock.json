@@ -1,0 +1,65 @@
+{
+  "a1_checkpoint_lock_path": "reports/summaries/a1_checkpoint_lock.json",
+  "a1_checkpoint_lock_sha256": "2b2583784634622ac0c850f3def757520b34d61be5a0820dacbf40afc436b8e8",
+  "a1_config_sha256": "53694914d842d421f4d3d7d923bc95271b15592197627b143ff9128991df442a",
+  "ablation": {
+    "changed_feature": "relative geometry displacement on each directed edge",
+    "graph_adjacency_retained": true,
+    "name": "edge-feature ablation",
+    "node_features_retained": true,
+    "replacement": "zeros"
+  },
+  "config_path": "configs/airfrans/a3_gnn_edge_zero.json",
+  "config_sha256": "53a6c10a90452674b80fca24284274e1679b646e158c5761770f6e7218d559f3",
+  "created_at_utc": "2026-09-14T20:07:25.764357+00:00",
+  "entries": [
+    {
+      "checkpoint_path": "reports/runs/airfrans-a3-edge-zero-gnn-20260914T190425564535Z-3613f454bade/checkpoints/selected.pt",
+      "checkpoint_sha256": "74c2fc4032bc014d24b18629373aeeedf7a0fdeda6814e6e2c5b428f28c02603",
+      "config_sha256": "56745fbe330e600446564a031515db0db59eaeb568de547a9fa9f60f73786865",
+      "model": "gnn",
+      "run_directory": "reports/runs/airfrans-a3-edge-zero-gnn-20260914T190425564535Z-3613f454bade",
+      "run_id": "airfrans-a3-edge-zero-gnn-20260914T190425564535Z-3613f454bade",
+      "seed": 17,
+      "selected_epoch": 100,
+      "selection_metric": "macro_mean_validation_pressure_rmse_nondimensional",
+      "selection_metric_value": 0.49246048964635697
+    },
+    {
+      "checkpoint_path": "reports/runs/airfrans-a3-edge-zero-gnn-20260914T192438878011Z-bb72bfc321fc/checkpoints/selected.pt",
+      "checkpoint_sha256": "c700d74094d0155725e7fc16a643077a19433ca8c752944a294e012f25b94ecb",
+      "config_sha256": "4318055ab95d9855ab1a33db96b5b45d27b73b93a44dd821e27cc2250623d281",
+      "model": "gnn",
+      "run_directory": "reports/runs/airfrans-a3-edge-zero-gnn-20260914T192438878011Z-bb72bfc321fc",
+      "run_id": "airfrans-a3-edge-zero-gnn-20260914T192438878011Z-bb72bfc321fc",
+      "seed": 29,
+      "selected_epoch": 90,
+      "selection_metric": "macro_mean_validation_pressure_rmse_nondimensional",
+      "selection_metric_value": 0.49595463474674845
+    },
+    {
+      "checkpoint_path": "reports/runs/airfrans-a3-edge-zero-gnn-20260914T194601598835Z-94bdcd74f909/checkpoints/selected.pt",
+      "checkpoint_sha256": "fd961de388db57b7e302aeac89d2b833ab12b552d3d3fed231ca9684d9b89504",
+      "config_sha256": "4eaedb48c92cd1a04fae8d5bc8004fdd48e02cc3b4322991311b68399b102fe6",
+      "model": "gnn",
+      "run_directory": "reports/runs/airfrans-a3-edge-zero-gnn-20260914T194601598835Z-94bdcd74f909",
+      "run_id": "airfrans-a3-edge-zero-gnn-20260914T194601598835Z-94bdcd74f909",
+      "seed": 41,
+      "selected_epoch": 90,
+      "selection_metric": "macro_mean_validation_pressure_rmse_nondimensional",
+      "selection_metric_value": 0.484601863613163
+    }
+  ],
+  "evaluation_source_sha256": {
+    "src/sciai/airfrans/a1_contract.py": "d25e591a0f91bcfa3528a920a22fa6b8e864853dcbd8a409d17801a655e7a15a",
+    "src/sciai/airfrans/a1_final.py": "a0f96716adecfa62eb1f3f47701fdf777c2f2fa2b2b5dc8ed364b176c5a24683",
+    "src/sciai/airfrans/a1_final_data.py": "58bc9c2a2ade6aaba0c9acfca9b3d855e5d5c966c37bde3d5a0fee06cff03cb8",
+    "src/sciai/airfrans/a3_ablation.py": "4cdf80f258da15fb3152091fba3e3a00bea395360736962da2e3523cb720547a",
+    "src/sciai/airfrans/mlp_smoke.py": "7683bb5f398e367e04074e8230824d2c204088a12943546fc2612cf8d9a463e9",
+    "src/sciai/airfrans/pilot_models.py": "e72cde4298b793efbfe78cfdf744a548febe472f505132dc8bb98a7a26fb2d5a"
+  },
+  "experiment_id": "airfrans-a3-edge-zero",
+  "schema_version": 1,
+  "selection_manifest_sha256": "8c532a15c2af6538177ae9885de8978553b162c4eb788d33a2998c9edc447014",
+  "test_results_available_when_created": false
+}

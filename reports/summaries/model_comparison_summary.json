@@ -1,0 +1,233 @@
+{
+  "checkpoint_lock_path": "reports/summaries/model_comparison_checkpoint_lock.json",
+  "failed_runs": [
+    {
+      "failure_reason": "KeyError: 'models'",
+      "fit_elapsed_seconds": 1.855108957970515,
+      "model": "fno",
+      "optimizer_steps_completed": 0,
+      "peak_rss_bytes": 365625344,
+      "run_id": "airfrans-a1-final-fno-20260914T172917766147Z-dbc555a69904",
+      "seed": 17,
+      "stop_reason": "FAILED_KEYERROR",
+      "test_evaluation_attempts": 0
+    },
+    {
+      "failure_reason": "ValueError: evaluation point has no valid FNO grid support",
+      "fit_elapsed_seconds": 149.88539524993394,
+      "model": "fno",
+      "optimizer_steps_completed": 1600,
+      "peak_rss_bytes": 516849664,
+      "run_id": "airfrans-a1-final-fno-20260914T173040438405Z-83141265944c",
+      "seed": 17,
+      "stop_reason": "FAILED_VALUEERROR",
+      "test_evaluation_attempts": 0
+    },
+    {
+      "failure_reason": "RuntimeError: Node 1702 has only 11 non-crossing candidates",
+      "fit_elapsed_seconds": 53.54670920805074,
+      "model": "gnn",
+      "optimizer_steps_completed": 0,
+      "peak_rss_bytes": 421609472,
+      "run_id": "airfrans-a1-final-gnn-20260914T161441765247Z-7ca3029b4067",
+      "seed": 17,
+      "stop_reason": "FAILED_RUNTIMEERROR",
+      "test_evaluation_attempts": 0
+    }
+  ],
+  "models": {
+    "fno": {
+      "seeds": [
+        17,
+        29,
+        41
+      ],
+      "test_pressure_rmse_nondimensional_mean": 0.9966332997885898,
+      "test_pressure_rmse_nondimensional_std": 0.0029244033733059217,
+      "test_surface_mae_nondimensional_mean": 0.80170435919771,
+      "test_surface_mae_nondimensional_std": 0.004504601358962891
+    },
+    "gnn": {
+      "seeds": [
+        17,
+        29,
+        41
+      ],
+      "test_pressure_rmse_nondimensional_mean": 0.7000872039272478,
+      "test_pressure_rmse_nondimensional_std": 0.02291838467821084,
+      "test_surface_mae_nondimensional_mean": 0.5632605988914267,
+      "test_surface_mae_nondimensional_std": 0.01750049958400626
+    },
+    "mlp": {
+      "seeds": [
+        17,
+        29,
+        41
+      ],
+      "test_pressure_rmse_nondimensional_mean": 0.6983412017333905,
+      "test_pressure_rmse_nondimensional_std": 0.02569713981630718,
+      "test_surface_mae_nondimensional_mean": 0.5492781414886754,
+      "test_surface_mae_nondimensional_std": 0.01874126129636929
+    }
+  },
+  "runs": [
+    {
+      "fit_peak_rss_bytes": 464912384,
+      "fit_seconds": 53.97672062495258,
+      "model": "mlp",
+      "optimizer_steps_completed": 16000,
+      "peak_rss_bytes": 464912384,
+      "run_id": "airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c",
+      "seed": 17,
+      "selected_epoch": 100,
+      "stop_reason": "COMPLETED_FROZEN_TEST_ONCE",
+      "test_peak_rss_bytes": 394084352,
+      "test_pressure_rmse_nondimensional": 0.7248482974339159,
+      "test_seconds": 9.359007708029822,
+      "test_surface_mae_nondimensional": 0.5648200433076743,
+      "validation_pressure_rmse_nondimensional": 0.5127832612897085,
+      "validation_surface_mae_nondimensional": 0.41731204429314994
+    },
+    {
+      "fit_peak_rss_bytes": 468549632,
+      "fit_seconds": 56.7616865420714,
+      "model": "mlp",
+      "optimizer_steps_completed": 16000,
+      "peak_rss_bytes": 468549632,
+      "run_id": "airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884",
+      "seed": 29,
+      "selected_epoch": 80,
+      "stop_reason": "COMPLETED_FROZEN_TEST_ONCE",
+      "test_peak_rss_bytes": 389038080,
+      "test_pressure_rmse_nondimensional": 0.6735389135673517,
+      "test_seconds": 9.01610766700469,
+      "test_surface_mae_nondimensional": 0.528466031088347,
+      "validation_pressure_rmse_nondimensional": 0.506981877521195,
+      "validation_surface_mae_nondimensional": 0.4178934584209831
+    },
+    {
+      "fit_peak_rss_bytes": 448462848,
+      "fit_seconds": 59.4647169590462,
+      "model": "mlp",
+      "optimizer_steps_completed": 16000,
+      "peak_rss_bytes": 448462848,
+      "run_id": "airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8",
+      "seed": 41,
+      "selected_epoch": 90,
+      "stop_reason": "COMPLETED_FROZEN_TEST_ONCE",
+      "test_peak_rss_bytes": 390692864,
+      "test_pressure_rmse_nondimensional": 0.696636394198904,
+      "test_seconds": 9.011584540945478,
+      "test_surface_mae_nondimensional": 0.5545483500700049,
+      "validation_pressure_rmse_nondimensional": 0.5103665406074962,
+      "validation_surface_mae_nondimensional": 0.4246509739080323
+    },
+    {
+      "fit_peak_rss_bytes": 451477504,
+      "fit_seconds": 988.3547749170102,
+      "model": "gnn",
+      "optimizer_steps_completed": 16000,
+      "peak_rss_bytes": 517537792,
+      "run_id": "airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab",
+      "seed": 17,
+      "selected_epoch": 80,
+      "stop_reason": "COMPLETED_FROZEN_TEST_ONCE",
+      "test_peak_rss_bytes": 517537792,
+      "test_pressure_rmse_nondimensional": 0.6929318057513897,
+      "test_seconds": 71.70789587497711,
+      "test_surface_mae_nondimensional": 0.5488114237981915,
+      "validation_pressure_rmse_nondimensional": 0.4981350444836465,
+      "validation_surface_mae_nondimensional": 0.4052851056084718
+    },
+    {
+      "fit_peak_rss_bytes": 446251008,
+      "fit_seconds": 1423.24094649998,
+      "model": "gnn",
+      "optimizer_steps_completed": 16000,
+      "peak_rss_bytes": 513671168,
+      "run_id": "airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f",
+      "seed": 29,
+      "selected_epoch": 90,
+      "stop_reason": "COMPLETED_FROZEN_TEST_ONCE",
+      "test_peak_rss_bytes": 513671168,
+      "test_pressure_rmse_nondimensional": 0.6816001672595159,
+      "test_seconds": 75.43196791701484,
+      "test_surface_mae_nondimensional": 0.5582506660128874,
+      "validation_pressure_rmse_nondimensional": 0.5001782174293261,
+      "validation_surface_mae_nondimensional": 0.4162831616444442
+    },
+    {
+      "fit_peak_rss_bytes": 444792832,
+      "fit_seconds": 1685.875667290995,
+      "model": "gnn",
+      "optimizer_steps_completed": 16000,
+      "peak_rss_bytes": 517505024,
+      "run_id": "airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89",
+      "seed": 41,
+      "selected_epoch": 90,
+      "stop_reason": "COMPLETED_FROZEN_TEST_ONCE",
+      "test_peak_rss_bytes": 517505024,
+      "test_pressure_rmse_nondimensional": 0.7257296387708378,
+      "test_seconds": 99.78800520894583,
+      "test_surface_mae_nondimensional": 0.582719706863201,
+      "validation_pressure_rmse_nondimensional": 0.5123361802946949,
+      "validation_surface_mae_nondimensional": 0.42999598749354223
+    },
+    {
+      "fit_peak_rss_bytes": 600555520,
+      "fit_seconds": 500.6086939589586,
+      "model": "fno",
+      "optimizer_steps_completed": 16000,
+      "peak_rss_bytes": 600555520,
+      "run_id": "airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00",
+      "seed": 17,
+      "selected_epoch": 30,
+      "stop_reason": "COMPLETED_FROZEN_TEST_ONCE",
+      "test_peak_rss_bytes": 453181440,
+      "test_pressure_rmse_nondimensional": 0.9936748866473444,
+      "test_seconds": 18.275305207935162,
+      "test_surface_mae_nondimensional": 0.7981037198215396,
+      "validation_pressure_rmse_nondimensional": 0.7068508712138732,
+      "validation_surface_mae_nondimensional": 0.5896198177412819
+    },
+    {
+      "fit_peak_rss_bytes": 569229312,
+      "fit_seconds": 787.8812364999903,
+      "model": "fno",
+      "optimizer_steps_completed": 16000,
+      "peak_rss_bytes": 569229312,
+      "run_id": "airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e",
+      "seed": 29,
+      "selected_epoch": 70,
+      "stop_reason": "COMPLETED_FROZEN_TEST_ONCE",
+      "test_peak_rss_bytes": 446447616,
+      "test_pressure_rmse_nondimensional": 0.999522463399013,
+      "test_seconds": 16.604486416908912,
+      "test_surface_mae_nondimensional": 0.8002538358466362,
+      "validation_pressure_rmse_nondimensional": 0.7055277826981122,
+      "validation_surface_mae_nondimensional": 0.5837014942696884
+    },
+    {
+      "fit_peak_rss_bytes": 667369472,
+      "fit_seconds": 643.889439666993,
+      "model": "fno",
+      "optimizer_steps_completed": 16000,
+      "peak_rss_bytes": 667369472,
+      "run_id": "airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9",
+      "seed": 41,
+      "selected_epoch": 30,
+      "stop_reason": "COMPLETED_FROZEN_TEST_ONCE",
+      "test_peak_rss_bytes": 448036864,
+      "test_pressure_rmse_nondimensional": 0.9967025493194122,
+      "test_seconds": 18.306699124979787,
+      "test_surface_mae_nondimensional": 0.8067555219249543,
+      "validation_pressure_rmse_nondimensional": 0.6998825588799034,
+      "validation_surface_mae_nondimensional": 0.5937073684658235
+    }
+  ],
+  "schema_version": 1,
+  "selection_manifest_sha256": "8c532a15c2af6538177ae9885de8978553b162c4eb788d33a2998c9edc447014",
+  "status": "COMPLETED",
+  "test_evaluations_per_checkpoint": 1,
+  "test_results_used_for_selection": false
+}

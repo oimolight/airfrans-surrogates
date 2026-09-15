@@ -1,0 +1,123 @@
+{
+  "created_at_utc": "2026-09-14T18:21:01.720640+00:00",
+  "entries": [
+    {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c/checkpoints/selected.pt",
+      "checkpoint_sha256": "8c8ac8c7b7629ef311d6943af4e3bf81eef14ab6dde6bf076900e29c3f9548e7",
+      "config_sha256": "935f810b2457afcca7ea01ac688ea08c43ab21dd60171ebc82b27dd81c753b62",
+      "model": "mlp",
+      "run_directory": "reports/runs/airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c",
+      "run_id": "airfrans-a1-final-mlp-20260914T161006605574Z-98daaecc748c",
+      "seed": 17,
+      "selected_epoch": 100,
+      "selection_metric": "macro_mean_validation_pressure_rmse_nondimensional",
+      "selection_metric_value": 0.5127832612897085
+    },
+    {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884/checkpoints/selected.pt",
+      "checkpoint_sha256": "96c0ae42bccbc08b0db7c4d82c663517466e19df0876ced5a17c4ab114203202",
+      "config_sha256": "67cd83c957c615dae7858b255142c3a7456c344d07ff1b21835009ea1aec247c",
+      "model": "mlp",
+      "run_directory": "reports/runs/airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884",
+      "run_id": "airfrans-a1-final-mlp-20260914T161210862935Z-ebe9c7630884",
+      "seed": 29,
+      "selected_epoch": 80,
+      "selection_metric": "macro_mean_validation_pressure_rmse_nondimensional",
+      "selection_metric_value": 0.506981877521195
+    },
+    {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8/checkpoints/selected.pt",
+      "checkpoint_sha256": "e077dbd32bd51a7f7f2c30af0b236e9357b5f22909c25b80f76cfda114aad872",
+      "config_sha256": "7d4562bdd7269a69534852045f4c28bdf5b9f1da0445cc1f4f3f904d938ed06d",
+      "model": "mlp",
+      "run_directory": "reports/runs/airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8",
+      "run_id": "airfrans-a1-final-mlp-20260914T161320001837Z-213c345f12e8",
+      "seed": 41,
+      "selected_epoch": 90,
+      "selection_metric": "macro_mean_validation_pressure_rmse_nondimensional",
+      "selection_metric_value": 0.5103665406074962
+    },
+    {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab/checkpoints/selected.pt",
+      "checkpoint_sha256": "ed21ea6db38c453f1c62467145d3685652770ad6491ca63b88f25781f4889c54",
+      "config_sha256": "095e2ae07888e2d020fc5d3bc4c773557dffe3e337a039c4fa726ba63d9a803e",
+      "model": "gnn",
+      "run_directory": "reports/runs/airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab",
+      "run_id": "airfrans-a1-final-gnn-20260914T161630512662Z-e231245071ab",
+      "seed": 17,
+      "selected_epoch": 80,
+      "selection_metric": "macro_mean_validation_pressure_rmse_nondimensional",
+      "selection_metric_value": 0.4981350444836465
+    },
+    {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f/checkpoints/selected.pt",
+      "checkpoint_sha256": "80f8e470eed31bf034ca655dc257a6e7b94be2407722a9bf83708b54b56b6f17",
+      "config_sha256": "9d047023f53fb8ef06ee2a65c0237198a242f9e3599c9368abb91f2d1cab7b42",
+      "model": "gnn",
+      "run_directory": "reports/runs/airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f",
+      "run_id": "airfrans-a1-final-gnn-20260914T163416373233Z-351ba431d17f",
+      "seed": 29,
+      "selected_epoch": 90,
+      "selection_metric": "macro_mean_validation_pressure_rmse_nondimensional",
+      "selection_metric_value": 0.5001782174293261
+    },
+    {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89/checkpoints/selected.pt",
+      "checkpoint_sha256": "4592dc107d59a20cda99e42a41a80719e9030545c6ba3c5541305d86ee026b1c",
+      "config_sha256": "62fe97dd8703e55d4c4401273957d80497e519583832fa8423ff6dad6cadea2a",
+      "model": "gnn",
+      "run_directory": "reports/runs/airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89",
+      "run_id": "airfrans-a1-final-gnn-20260914T165934681307Z-11912419dc89",
+      "seed": 41,
+      "selected_epoch": 90,
+      "selection_metric": "macro_mean_validation_pressure_rmse_nondimensional",
+      "selection_metric_value": 0.5123361802946949
+    },
+    {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00/checkpoints/selected.pt",
+      "checkpoint_sha256": "0289ff6f90c62feee27e2c7d57781b5ed8f3b8dc88202556f0e628dc79fc5c53",
+      "config_sha256": "4696d91b3b2e366c1a3aa89087687e2a4d09838660b1c36e1c56415a9a5905c6",
+      "model": "fno",
+      "run_directory": "reports/runs/airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00",
+      "run_id": "airfrans-a1-final-fno-20260914T174114930305Z-845b847d6a00",
+      "seed": 17,
+      "selected_epoch": 30,
+      "selection_metric": "macro_mean_validation_pressure_rmse_nondimensional",
+      "selection_metric_value": 0.7068508712138732
+    },
+    {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e/checkpoints/selected.pt",
+      "checkpoint_sha256": "96d73c52a562cbbd8ff7e7639cfe14e05e1e1c3ee41cdd64cea7fc14d8826ae5",
+      "config_sha256": "d54db677a2f9a1e86ebf1f0cc93cfeba66ade76dfe57fcce02e600420d8e49da",
+      "model": "fno",
+      "run_directory": "reports/runs/airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e",
+      "run_id": "airfrans-a1-final-fno-20260914T175311967526Z-4fd6c0d33d6e",
+      "seed": 29,
+      "selected_epoch": 70,
+      "selection_metric": "macro_mean_validation_pressure_rmse_nondimensional",
+      "selection_metric_value": 0.7055277826981122
+    },
+    {
+      "checkpoint_path": "reports/runs/airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9/checkpoints/selected.pt",
+      "checkpoint_sha256": "5964a45dfac4165b3784b9e468c280f3be4184c4ad2c00ff56904762fabe5a4c",
+      "config_sha256": "b41a2f750d6b6a511015fff7d395baaff035919e39a2af400bfb73417b9c8350",
+      "model": "fno",
+      "run_directory": "reports/runs/airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9",
+      "run_id": "airfrans-a1-final-fno-20260914T180832172659Z-24f9c3e857b9",
+      "seed": 41,
+      "selected_epoch": 30,
+      "selection_metric": "macro_mean_validation_pressure_rmse_nondimensional",
+      "selection_metric_value": 0.6998825588799034
+    }
+  ],
+  "evaluation_source_sha256": {
+    "src/sciai/airfrans/a1_contract.py": "d25e591a0f91bcfa3528a920a22fa6b8e864853dcbd8a409d17801a655e7a15a",
+    "src/sciai/airfrans/a1_final.py": "a0f96716adecfa62eb1f3f47701fdf777c2f2fa2b2b5dc8ed364b176c5a24683",
+    "src/sciai/airfrans/a1_final_data.py": "58bc9c2a2ade6aaba0c9acfca9b3d855e5d5c966c37bde3d5a0fee06cff03cb8",
+    "src/sciai/airfrans/mlp_smoke.py": "7683bb5f398e367e04074e8230824d2c204088a12943546fc2612cf8d9a463e9",
+    "src/sciai/airfrans/pilot_models.py": "e72cde4298b793efbfe78cfdf744a548febe472f505132dc8bb98a7a26fb2d5a"
+  },
+  "schema_version": 1,
+  "selection_manifest_sha256": "8c532a15c2af6538177ae9885de8978553b162c4eb788d33a2998c9edc447014",
+  "test_results_available_when_created": false
+}
